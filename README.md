@@ -1,2 +1,4 @@
 # Openframeworks-Painting-to-Mesh
 Openframeworks project Painting to Mesh
+
+Generative mesh implemented using Openframeworks. The project implemented using an image to drive the creation of a mesh. With the color information of the pixels, the meshes created using the selected bright colors. A threshold applied such that we only generate a vertex at the pixel locations where the intensity of the color is higher than some set value that we choose. Then we need to loop through all possible pairs of selected pixel locations, check if the distance between them is less than a particular value, and if so, connect them. Perlin noise is used to add movement to the meshes. Perlin noise generates random values that smoothly change over time and this gives the movement to the lines.Here are some examples of the meshes I generated using important art works.
